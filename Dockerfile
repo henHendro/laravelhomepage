@@ -17,9 +17,3 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY composer.lock composer.json /var/www/
 
 WORKDIR /var/www
-
-COPY . .
-
-RUN chown -R www-data:www-data \
-    /var/www/storage \
-    /var/www/bootstrap/cache
