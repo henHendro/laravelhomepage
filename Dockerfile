@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     net-tools \
     iputils-ping \
-    mysql-client
+    mariabdb-client
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
